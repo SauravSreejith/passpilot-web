@@ -7,9 +7,9 @@ interface FeatureCardProps {
   gradient?: string;
 }
 
-const FeatureCard = ({ icon: Icon, title, description, gradient = "bg-gradient-card" }: FeatureCardProps) => {
+const FeatureCard = ({ icon: Icon, title, description }: Omit<FeatureCardProps, 'gradient'>) => {
   return (
-    <div className={`${gradient} border border-border rounded-2xl p-6 hover:shadow-glow transition-all duration-300 hover:scale-105 cursor-pointer group`}>
+    <div className="bg-gradient-card border border-border rounded-2xl p-6 hover:shadow-glow transition-all duration-300 hover:scale-105 group h-full">
       <div className="mb-4">
         <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
           <Icon className="h-6 w-6 text-primary" />

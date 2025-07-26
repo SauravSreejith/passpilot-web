@@ -7,7 +7,11 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-hero">
       <Navigation />
       <HeroSection />
-      <FeaturesSection />
+      <section className="py-12 px-6">
+        <div className="max-w-7xl mx-auto">
+          <FeaturesSection />
+        </div>
+      </section>
     </div>
   );
 };
