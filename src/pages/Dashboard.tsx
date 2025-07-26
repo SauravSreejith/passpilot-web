@@ -39,8 +39,9 @@ const Dashboard = () => {
           </div>
           
           {/* Progress Circle */}
-          <div className="ml-8">
+          <div className="ml-8 text-center">
             <CircularProgress percentage={67} />
+            <p className="text-lg font-bold text-foreground mt-4">Your progress</p>
           </div>
         </div>
       </section>
