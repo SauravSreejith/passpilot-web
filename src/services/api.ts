@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5000"; // Your backend server URL
+const API_BASE_URL = "https://067a2ae2ebd7.ngrok-free.app/"; // Your backend server URL
 
 // Generic fetch function with error handling
 async function fetchApi(endpoint: string, options: RequestInit = {}) {
